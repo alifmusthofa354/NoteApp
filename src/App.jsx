@@ -15,10 +15,10 @@ const App = () => {
     <Router>
       <Routes>
         {/* Redirect default route to login page */}
-        <Route path="/" element={<Navigate to="/login" />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/notev2" element={<Navigate to="/notev2/login" />} />
+        <Route path="/notev2/login" element={<LoginPage />} />
+        <Route path="/notev2/register" element={<RegisterPage />} />
+        <Route path="/notev2/dashboard" element={<DashboardPage />} />
       </Routes>
     </Router>
   );

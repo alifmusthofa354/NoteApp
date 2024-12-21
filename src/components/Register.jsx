@@ -9,7 +9,7 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://85.31.238.116:5001/register", {
+      await axios.post("https://petarungan.site/noteapi/register", {
         username,
         password,
       });

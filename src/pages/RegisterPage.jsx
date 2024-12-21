@@ -10,7 +10,8 @@ const RegisterPage = () => {
       </div>
       <div className="login-page">
         <p>
-          Already have an account? <ButtonLink to="/login">Login</ButtonLink>
+          Already have an account?{" "}
+          <ButtonLink to="/notev2/login">Login</ButtonLink>
         </p>
       </div>
     </>

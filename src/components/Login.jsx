@@ -11,15 +11,18 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://85.31.238.116:5001/login", {
-        username,
-        password,
-      });
+      const response = await axios.post(
+        "https://petarungan.site/noteapi/login",
+        {
+          username,
+          password,
+        }
+      );
       alert("Login Successful");
       localStorage.setItem("token", response.data.token);
       setError("");
       // Arahkan ke halaman Dashboard setelah login sukses
-      navigate("/dashboard");
+      navigate("/notev2/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed");
     }

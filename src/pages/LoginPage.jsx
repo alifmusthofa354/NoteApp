@@ -11,7 +11,7 @@ const LoginPage = () => {
       <div className="login-page">
         <p>
           Don't have an account?{" "}
-          <ButtonLink to="/register">Register</ButtonLink>
+          <ButtonLink to="/notev2/register">Register</ButtonLink>
         </p>
       </div>
     </>
